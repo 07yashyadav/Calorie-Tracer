@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Tracker Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Warning Modal -->
+    <div id="warningModal" class="modal">
+
+        <div class="modal-content">
+
+            <h2>
+                Daily Budget Exceeded!
+            </h2>
+
+            <p>
+                You have exceeded today's calorie budget.
+            </p>
+
+            <button onclick="closeModal()">
+                Close
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <h1>
+            Calorie Tracker & Macro Dashboard
+        </h1>
+
+        <!-- Fitness Goal Selector -->
+        <div class="goal-container">
+
+            <h2>
+                Fitness Goal
+            </h2>
+
+            <select
+                id="goalSelect"
+                onchange="changeGoal()"
+            >
+
+                <option value="loss">
+                    Weight Loss
+                </option>
+
+                <option
+                    value="maintain"
+                    selected
+                >
+                    Maintenance
+                </option>
+
+                <option value="gain">
+                    Muscle Gain
+                </option>
+
+            </select>
+
+        </div>
+
+        <!-- Dashboard -->
+        <div class="dashboard">
+
+            <h3 id="calorieText">
+                Calories: 0 / 2200
+            </h3>
+
+            <p id="remainingCalories">
+                Remaining Calories: 2200
+            </p>
+
+            <div class="progress">
+
+                <div
+                    id="calorieBar"
+                    class="bar"
+                ></div>
+
+            </div>
+
+            <h4 id="proteinText">
+                Protein: 0 / 140g
+            </h4>
+
+            <div class="progress">
+
+                <div
+                    id="proteinBar"
+                    class="bar protein"
+                ></div>
+
+            </div>
+
+            <h4 id="carbText">
+                Carbs: 0 / 250g
+            </h4>
+
+            <div class="progress">
+
+                <div
+                    id="carbBar"
+                    class="bar carb"
+                ></div>
+
+            </div>
+
+            <h4 id="fatText">
+                Fat: 0 / 70g
+            </h4>
+
+            <div class="progress">
+
+                <div
+                    id="fatBar"
+                    class="bar fat"
+                ></div>
+
+            </div>
+
+        </div>
+
+        <!-- Food Entry -->
+        <div class="card">
+
+            <h2>
+                Add Food
+            </h2>
+
+            <input
+                type="text"
+                id="foodName"
+                placeholder="Food Name"
+            >
+
+            <input
+                type="number"
+                id="weight"
+                placeholder="Weight (g)"
+            >
+
+            <button onclick="addFood()">
+                Add Food
+            </button>
+
+            <button onclick="mockImageUpload()">
+                Image Upload
+            </button>
+
+        </div>
+
+        <!-- Meal History -->
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Name</th>
+
+                    <th>Weight (g)</th>
+
+                    <th>Calories</th>
+
+                    <th>Protein</th>
+
+                    <th>Carbs</th>
+
+                    <th>Fat</th>
+
+                    <th>Delete</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="mealTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <!-- JavaScript Files -->
+
+    <script src="js/foodDatabase.js"></script>
+
+    <!-- Change this line if your file is named nutrition.js -->
+    <script src="js/nutritionEngine.js"></script>
+
+    <script src="js/stateManager.js"></script>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

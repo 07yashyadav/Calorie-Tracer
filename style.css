@@ -1,0 +1,267 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #334155
+    );
+    color:white;
+    padding:30px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:2.5rem;
+    font-weight:700;
+}
+
+.goal-container,
+.dashboard,
+.card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:
+    0 8px 25px rgba(0,0,0,0.25);
+}
+
+.goal-container h2{
+    margin-bottom:15px;
+}
+
+#goalSelect{
+    width:250px;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+}
+
+#calorieText{
+    font-size:1.4rem;
+    margin-bottom:10px;
+}
+
+#remainingCalories{
+    margin-bottom:15px;
+    color:#cbd5e1;
+    font-size:14px;
+}
+
+.progress{
+    width:100%;
+    height:22px;
+    background:rgba(255,255,255,0.12);
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+
+.bar{
+    height:100%;
+    width:0;
+    border-radius:20px;
+    transition:all 0.5s ease;
+    background:linear-gradient(
+        90deg,
+        #22c55e,
+        #16a34a
+    );
+}
+
+.protein{
+    background:linear-gradient(
+        90deg,
+        #3b82f6,
+        #2563eb
+    );
+}
+
+.carb{
+    background:linear-gradient(
+        90deg,
+        #f59e0b,
+        #d97706
+    );
+}
+
+.fat{
+    background:linear-gradient(
+        90deg,
+        #a855f7,
+        #7e22ce
+    );
+}
+
+.warning{
+    background:linear-gradient(
+        90deg,
+        #ef4444,
+        #dc2626
+    ) !important;
+}
+
+.card h2{
+    margin-bottom:20px;
+}
+
+input{
+    padding:12px;
+    width:220px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    margin:8px;
+    font-size:15px;
+}
+
+button{
+    border:none;
+    padding:12px 18px;
+    margin:8px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+}
+
+button:first-of-type{
+    background:#22c55e;
+    color:white;
+}
+
+button:last-of-type{
+    background:#3b82f6;
+    color:white;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:20px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+}
+
+thead{
+    background:rgba(255,255,255,0.15);
+}
+
+th{
+    padding:15px;
+    text-align:center;
+}
+
+td{
+    padding:14px;
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,0.1);
+}
+
+tbody tr:hover{
+    background:rgba(255,255,255,0.05);
+}
+
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.65);
+    z-index:1000;
+}
+
+.modal-content{
+    width:400px;
+    background:white;
+    color:black;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    margin:150px auto;
+    animation:popIn .3s ease;
+}
+
+.modal-content h2{
+    color:#dc2626;
+    margin-bottom:15px;
+}
+
+.modal-content p{
+    margin-bottom:20px;
+}
+
+.modal-content button{
+    background:#dc2626;
+    color:white;
+}
+
+@keyframes popIn{
+
+    from{
+        transform:scale(0.8);
+        opacity:0;
+    }
+
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    h1{
+        font-size:1.8rem;
+    }
+
+    input{
+        width:100%;
+        margin:8px 0;
+    }
+
+    button{
+        width:100%;
+        margin:8px 0;
+    }
+
+    #goalSelect{
+        width:100%;
+    }
+
+    .modal-content{
+        width:90%;
+    }
+
+    table{
+        display:block;
+        overflow-x:auto;
+    }
+}
