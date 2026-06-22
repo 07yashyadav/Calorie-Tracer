@@ -1,4 +1,3 @@
-<img width="1886" height="805" alt="Screenshot 2026-06-22 151502" src="https://github.com/user-attachments/assets/d09258bd-7006-4f79-87c0-c0d7a4d924e2" />
 A responsive web-based **Calorie Tracker & Macro Dashboard** that helps users monitor their daily nutritional intake, track calories, manage macronutrients, and stay aligned with their fitness goals.
 
 ---
@@ -64,6 +63,8 @@ Changing goals dynamically recalculates all percentages while preserving existin
 * Delete meals instantly.
 * Automatic recalculation of all dashboard metrics.
 
+<img width="1886" height="805" alt="Screenshot 2026-06-22 151502" src="https://github.com/user-attachments/assets/f1e6fa33-e21e-47ad-af19-16938d8fdf9d" />
+
 ---
 
 ## 🧠 Backend Logic
@@ -110,6 +111,8 @@ The application maintains:
 * Budget exceeded status
 
 ---
+
+<img width="1881" height="847" alt="Screenshot 2026-06-22 151515" src="https://github.com/user-attachments/assets/8d37f5fa-132a-4caa-a4d2-b8813a293964" />
 
 ## 📂 Project Structure
 
