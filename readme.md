@@ -1,5 +1,4 @@
-<img width="1878" height="861" alt="image" src="https://github.com/user-attachments/assets/47fcc482-6110-4ff3-9ad0-8ff8d72876b4" /># 🏋️ Fitness Nutrition Dashboard
-
+<img width="1886" height="805" alt="Screenshot 2026-06-22 151502" src="https://github.com/user-attachments/assets/d09258bd-7006-4f79-87c0-c0d7a4d924e2" />
 A responsive web-based **Calorie Tracker & Macro Dashboard** that helps users monitor their daily nutritional intake, track calories, manage macronutrients, and stay aligned with their fitness goals.
 
 ---
