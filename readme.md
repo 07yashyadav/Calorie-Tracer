@@ -1,4 +1,4 @@
-# 🏋️ Fitness Nutrition Dashboard
+<img width="1878" height="861" alt="image" src="https://github.com/user-attachments/assets/47fcc482-6110-4ff3-9ad0-8ff8d72876b4" /># 🏋️ Fitness Nutrition Dashboard
 
 A responsive web-based **Calorie Tracker & Macro Dashboard** that helps users monitor their daily nutritional intake, track calories, manage macronutrients, and stay aligned with their fitness goals.
 
@@ -37,6 +37,8 @@ The Fitness Nutrition Dashboard is designed to simplify daily nutrition tracking
 * Protein progress bar.
 * Carbohydrate progress bar.
 * Fat progress bar.
+
+<img width="1891" height="857" alt="Screenshot 2026-06-22 151424" src="https://github.com/user-attachments/assets/cd29849f-2086-4d2d-b787-3a7e815ef375" />
 
 ### 🎯 Fitness Goals
 
